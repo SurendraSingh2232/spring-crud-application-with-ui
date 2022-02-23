@@ -1,0 +1,16 @@
+logging:
+  level:
+    ROOT: DEBUG
+    org.hibernate.SQL: DEBUG
+    com.modelviewcontroller: DEBUG
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/college_db
+    username: postgres
+    password: postgres
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.PostgreSQLDialect
